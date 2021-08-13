@@ -1,0 +1,93 @@
+/* HEADER */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8fadfd;
+}
+img{
+    width: 10rem;
+    padding-left: 1.2rem;
+}
+
+/* Body */
+body{
+    position: relative;
+    min-height: 100vh;
+}
+main{
+    padding-bottom: 150px;
+}
+
+/* Register Forms */
+.subBtn{
+    background-color: #8fadfd;
+    border: none;
+    margin-bottom: 16px;
+}
+.pet{
+    border: 2px solid #16fa01;
+    border-radius: 10px;
+    background-color: #eef7f0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-position: 50% 50%;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    transition: background-size .35s ease-in-out;
+}
+.pet:hover{
+    background-size: 100% 100%;
+}
+#pets{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+/* Footer */
+footer{
+    position: absolute;
+    background-color: #8fadfd;
+    width: 100vw;
+    bottom: 0;
+    padding: 1rem 0 1rem 12px;
+}
+footer p{
+    margin-bottom: 0;
+    color: white;
+}
+#footer-site{
+    padding-left: 6px;
+    /* border-left: 3px solid #ff91ba; */
+}
+
+/* UTILITIES */
+.nav-hover{
+    border-radius: 6px 6px 0 0;
+    /* background-image: linear-gradient(#ff91ba,#ff91ba); */
+    background-position: 0 100%;
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+    color: white;
+    transition: background-size .5s,letter-spacing .5s;
+}
+.nav-hover:hover{
+    background-size: 100% 100%;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: white;
+}
+.bordered{
+    border: 2px solid black;
+}
+
+
+.hide{
+    display:none;
+}
+
+.highlight{
+    background-color: rgb(98, 98, 250);
+}
